@@ -1,0 +1,12 @@
+apiVersion: skaffold/v1
+kind: Config
+build:
+  artifacts:
+    - image: rajeshpodder007/dockerk8s
+      jib: {}
+  local: {}
+
+deploy:
+  kubectl:
+    manifests:
+      - k8s-*

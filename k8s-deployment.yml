@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dockerk8s
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: dockerk8s
+  template:
+    metadata:
+      labels:
+        app: dockerk8s
+    spec:
+      containers:
+      - name: docker-k8s
+        image: rajeshpodder007/dockerk8s
+        ports:
+        - containerPort: 8080
