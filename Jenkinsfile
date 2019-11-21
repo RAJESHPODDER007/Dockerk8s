@@ -6,7 +6,7 @@ node{
         sh "${mvnCMD} clean package"
     }
 
-    agent { dockerfile true }
+
 
     stage('Push image'){
        sh "set PATH='/usr/local/bin/docker'"
