@@ -1,4 +1,6 @@
 node{
+
+    checkout scm
     def app
     
     stage('Mvn package'){
@@ -6,11 +8,10 @@ node{
         def mvnCMD= "${mvnHome}/bin/mvn"
         sh "${mvnCMD} clean package"
     }
-    stage('Docker image build'){
-          app= docker.build("rajeshpodder007/dockerk8s:${env.BUILD_NUMBER}")
-    }
+
     stage('Push image'){
         docker.withRegistry('https://registry.hub.docker.com','Dockerhub'){
+                 app= docker.build("rajeshpodder007/dockerk8s:${env.BUILD_NUMBER}")
             app.push()
         }
     }
