@@ -16,4 +16,4 @@ spec:
       - name: docker-k8s
         image: rajeshpodder007/dockerk8s
         ports:
-        - containerPort: 8080
+        - containerPort: 9191

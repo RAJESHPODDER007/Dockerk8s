@@ -37,18 +37,18 @@
 			<artifactId>cucumber-junit</artifactId>
 			<version>1.2.5</version>
 		</dependency>
-        <dependency>
+      <dependency>
             <groupId>org.junit.jupiter</groupId>
             <artifactId>junit-jupiter-api</artifactId>
             <version>5.0.0-M4</version>
             <scope>compile</scope>
         </dependency>
-		<dependency>
-			<groupId>org.junit.jupiter</groupId>
-			<artifactId>junit-jupiter-engine</artifactId>
-			<version>5.0.0-M3</version>
-			<scope>test</scope>
-		</dependency>
+		<!-- <dependency>
+           <groupId>org.junit.jupiter</groupId>
+           <artifactId>junit-jupiter-engine</artifactId>
+           <version>5.0.0-M3</version>
+           <scope>test</scope>
+       </dependency>-->
 		<dependency>
 			<groupId>org.junit.platform</groupId>
 			<artifactId>junit-platform-runner</artifactId>
@@ -98,16 +98,6 @@
 		</plugins>
 
 	</build>
-	<!--repositories>
-		<repository>
-			<id>myMavenRepo.read</id>
-			<url>https://mymavenrepo.com/repo/Qp7oLy3xmUgyWO2xkfm3/</url>
-		</repository>
-		<repository>
-			<id>myMavenRepo.write</id>
-			<url>https://mymavenrepo.com/repo/DzK13Fdo6KcwjesgPV6a/</url>
-		</repository>
 
-	</repositories-->
 
 </project>

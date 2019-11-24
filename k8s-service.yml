@@ -6,7 +6,7 @@ metadata:
       name: docker-k8s-service
 spec:
   ports:
-    - port: 8080
+    - port: 9191
       nodePort: 30000
       targetPort: 8080
       protocol: TCP
